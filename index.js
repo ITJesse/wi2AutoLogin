@@ -52,7 +52,7 @@ const login = async () => {
   } catch (error) {
     return console.log(error);
   }
-  const landingPage = encodeURI(`/${url.replace(boingoUrl)}`);
+  const landingPage = encodeURI(`/${url.replace(boingoUrl)}`, '');
   const loginData = {
     partner_array: '',
     UserName: username,
